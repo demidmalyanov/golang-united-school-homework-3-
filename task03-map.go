@@ -7,10 +7,8 @@ import (
 func sortMapValues(input map[int]string) (result []string) {
 	//Place your code here
 
-	m := map[int]string{2: "test1", 1: "test2", 4: "test3"}
-
 	keys := make([]int, 0, len(input))
-	for k := range m {
+	for k := range input {
 		keys = append(keys, k)
 	}
 	
